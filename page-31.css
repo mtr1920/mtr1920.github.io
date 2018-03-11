@@ -1,0 +1,81 @@
+body,html{
+	padding: 0;
+	margin:0;
+	font-family: HelveticaNeueW01-45Ligh,HelveticaNeueW02-45Ligh,HelveticaNeueW10-45Ligh,sans-serif;
+	color:#CFD8DC;
+	height:100%;
+	}
+body{
+	background-image: url('https://lh3.googleusercontent.com/lsZX3wIsy0qnsNkUwps3jTmha5zHdF-BHpKE28LOF0RmgNZ1TEnylv2GtlnX_KxeKQLKo6nRoTX5tIXJnDK2QuKEPjTSmg6WuFcN82Tru54qCtpKTPeo5KgZupxZmw-lpWQNwwT9Yg=w2400');
+	background-size:cover;
+	background-repeat: no-repeat;
+	height:100%;
+	
+}
+a{
+	text-decoration: none;
+	color:#CFD8DC;
+}
+a:active{
+	background-color: white;
+
+}.middle{
+	padding: 20px;
+	opacity: 0;
+	animation:middle-style 1s 1s linear forwards;
+	-moz-animation:middle-style 1s 1s linear forwards;
+	-webkit-animation:middle-style 1s 1s linear forwards;
+}
+
+.top-cantainer{
+	padding:1em 0em;
+	width: 100%;
+	max-height: 750px;
+	display: flex;
+	flex-direction: column;
+}
+.middle h1{
+	font-weight:lighter; 
+	font-size:2em;
+	text-align: center;
+	}
+.middle p{
+	text-align: center;
+	font-size:15px;
+
+}
+@media only screen and (min-width:768px){
+.middle h1{
+	opacity: 0;
+	font-size:3em;
+	margin-top:1em;
+	animation: navigations 1s 1s linear forwards;
+	-moz-animation: navigations 1s 1s linear forwards;
+	-webkit-animation: navigations 1s 1s linear forwards;
+}
+ .middle p{
+	opacity: 0;
+	font-size:20px;
+	animation: navigations 1.5s 1.5s linear forwards;
+	-moz-animation: navigations 1.5s 1.5s linear forwards;
+	-webkit-animation: navigations 1.5s 1.5s linear forwards;
+}
+}
+  .gnit{
+	      	display: inline-block;
+	      	padding: 10px 20px;
+	      	border: 2px solid #CFD8DC;
+	      	text-align: center;
+	      	opacity: 0;
+	      	animation:middle-style 1s 1.5s linear forwards;
+			-moz-animation:middle-style 1s 1.5s linear forwards;
+			-webkit-animation:middle-style 1s 1.5s linear forwards;
+	      	
+}
+@media only screen and (min-width:768px){
+	.gnit{
+		animation:middle-style 1.5s 1.5s linear forwards;
+		-moz-animation:middle-style 1.5s 1.5s linear forwards;
+		-webkit-animation:middle-style 1.5s 1.5s linear forwards;
+	}
+}

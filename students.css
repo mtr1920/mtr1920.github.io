@@ -1,0 +1,226 @@
+body,html{
+	padding: 0;
+	margin:0;
+	font-family: HelveticaNeueW01-45Ligh,HelveticaNeueW02-45Ligh,HelveticaNeueW10-45Ligh,sans-serif;
+	color:#111111;
+}
+.top-cantainer{
+	padding:1em 0em;
+	width: 100%;
+	max-height: 750px;
+	display: flex;
+	flex-direction: column;
+}
+ .student-bg{
+ 	background-image:url('https://images.pexels.com/photos/292442/pexels-photo-292442.jpeg');
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position: center;
+	background-attachment: fixed;
+	font-weight: bold;
+	letter-spacing: 1.6px;
+ }
+.st-bg{
+	width: 100%;
+    max-height:1300px;
+	padding:10em auto 0em;
+	position: relative;
+	opacity: .8;
+}
+.student-bg .st-bg h1{
+	font-size: 2em;
+	color: #ffffff;
+	letter-spacing: 1.6px;
+}
+.student-bg .st-bg p{
+		color: #ffffff;
+		letter-spacing: 1.6px;
+	}
+@media only screen and (min-width: 768px){
+	.student-bg .st-bg{
+		padding:14em 0em;
+	}
+	.student-bg .st-bg h1{
+		font-size: 4em;
+		margin-top: -1em;
+		margin-left: 10em;
+		font-weight: lighter;
+	}
+	.student-bg .st-bg p{
+		color: #ffffff;
+		word-spacing: 1.2;
+		margin-left: 32em;
+		font-size: 20px;
+	}
+}
+a{
+	text-decoration: none;
+	color:#CFD8DC;
+}
+a:active{
+	background-color: white;
+}
+
+
+.mtr-cantainer{
+	background-image: url(https://lh3.googleusercontent.com/IwH16a3r2hUOHWk3ZQmb-wRMGWuVIm4uvj6f4C2NLWkvS7LBP7CNa_FceoKYDe7d4cqMOLQ4nvyZBU_B0YR0_Xb9kHgNL-OcdGGDkg3me3xmxd6uhKJDAzu9O9la8X3KHR9psRKP2g=w2400);
+ 	width:70%;
+ 	height: 200px;
+ 	margin: 25px auto 0 ;
+	padding:1em 0;
+ 	display: flex;
+ 	background-size: contain;
+ 	background-repeat: no-repeat;
+ 	z-index: -1;
+}
+@media only screen and (min-width: 768px){
+	.mtr-lp{
+		width:100%;
+		height: 30vw;
+		margin: 2em auto 0em;
+		background-position:center;
+	    background-size: contain;
+
+	}
+} 
+.mtr-contentA{
+	position: relative;
+	margin: -8em auto 0;
+	height: 6em;
+	color:#334455;
+	font-weight: lighter;
+	font-size: 2em;
+}
+.mtr-contentA-lp p::before{
+content: "☠..";
+}
+@media only screen and (min-width: 768px){
+	.mtr-contentA-lp{
+	position: relative;
+	margin: -7em auto 0;
+	height: 6em;
+	color:#334455;
+	font-weight: lighter;
+	font-size: 4em;
+}
+}
+.mtr-content p::after{
+	content: '————————';
+	position: relative;
+}
+
+.mtr-content{
+ 	width:35%;
+ 	left: 25.5%;
+ 	height:450px;
+ 	line-height: 1.6;
+ 	margin: -4em  auto 0;
+	padding:0em 1em;
+ 	display: flex;
+ 	position:relative;
+ 	flex-direction: column;
+ 	z-index: 1;
+ 	color: black;
+ 	background-color:#ffffff;
+ 	box-shadow: 1px 3px 30px -1px gray;
+}
+
+@media only screen and (min-width: 768px){
+
+	.mtr-content-lp{
+		margin: -7em auto 1em;
+		height:300px;
+		width: 22.8%;
+		text-align: center;
+		left: 9.3%;
+		border-radius: 1%;
+	}
+}
+.topper-cantainer{
+	max-width:1400px;
+	max-height: 100%;
+	margin:3opx auto 0 auto;
+}
+.topper{
+	padding:10px;
+	margin:1em;
+	height: 350px;
+	box-sizing: border-box;
+	flex-basis:32%;
+	background-position: center;
+	background-size:cover;
+	background-repeat: no-repeat;
+	font-weight: lighter;
+	font-size:2em;
+	border-radius: 2%;
+	box-shadow: -1px 9px 30px -4px gray;
+}
+.topper  {
+	position: relative;
+}
+.topper a {
+	position: absolute;
+	right:0.5em;
+	bottom:0em;
+}
+.topper a i {
+	font-size: 1.75em;
+	color: white;
+}
+.topper a i:hover{
+perspective: 13px;
+
+}
+
+.topper-cantainer .topper p{
+	margin: 0 auto 0 -1em;
+}
+
+.topper:hover{
+	box-shadow: 0 8px 40px 3px #9E9E9E;
+	perspective: 1px;
+}
+@media only screen and (min-width: 768px)
+{
+	.topper-cantainer{
+		display: flex;
+		justify-content: space-between;
+	}
+	.topper-cantainer .topper{
+		width:100%;
+		height: 350px;
+		padding: 0px;
+		margin: 1em;
+		background-size:cover;
+	}
+}
+
+.topper:nth-child(1){ background-image: url('https://lh3.googleusercontent.com/B1AxaANqPUKdem8Lq81Hrhas0VG-_IA6qaGvRPm2eA_8KfTy8TLvhjr_Mp4JvBFrv23kNGNfGCSKQNarI3lKF5MtrdjifNhyNEDAO30TV61BuOVcw8bgQZEeaziBQF6arp3962gahg=w2400'); }
+.topper:nth-child(2){ background-image: url('https://i.imgur.com/xtE5Wbi.jpg');}
+.topper:nth-child(3){ background-image: url('https://i.imgur.com/LQ2nyKu.jpg'); }
+.topper:nth-child(4){ background-image: url('https://lh3.googleusercontent.com/M67fbbAMiQUHjw-FbruH7LUZp3L5zCu7_IkBagKDmEf-xlZ9szQzU23h33QIhrYit0427S5yovWFstfSzMXDmWEOVW1-LZ2ysFjrEFdEF-CFQuWYhbz6ws3zwMrMRDQaYpzUngZ85Q=w2400'); }
+
+
+.topper-cantainer .topper a{
+	transform: translate(50% 50%);
+}
+
+.last {
+    margin: 1em auto;
+    padding: 3em 8em;
+    text-align: center;
+    background:white;
+    display: table;
+    letter-spacing: 1px;
+    font-size: 1.5em;
+	box-shadow: -1px 9px 30px -4px gray;
+}
+
+footer {
+	width:100%;
+	padding: 1em;
+	color: white;
+	box-sizing: border-box;
+	background:black;
+	text-align: center;
+}
