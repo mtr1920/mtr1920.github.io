@@ -6,18 +6,19 @@ body,html{
 	height:100%;
 	}
 body{
-	background-image: url('https://lh3.googleusercontent.com/lsZX3wIsy0qnsNkUwps3jTmha5zHdF-BHpKE28LOF0RmgNZ1TEnylv2GtlnX_KxeKQLKo6nRoTX5tIXJnDK2QuKEPjTSmg6WuFcN82Tru54qCtpKTPeo5KgZupxZmw-lpWQNwwT9Yg=w2400');
-	background-size:cover;
+	background-image: url('https://images.unsplash.com/photo-1454922069690-ed3f6fcddb2b?ixlib=rb-0.3.5&s=7f99a007a604e18589c27b9d919e48a1&auto=format&fit=crop&w=1567&q=80');
+	background-size:100% 100%;
+	color: white;
+	width: 100%;
 	background-repeat: no-repeat;
 	height:100%;
-	
 }
 a{
 	text-decoration: none;
-	color:#CFD8DC;
+	color:#FFFFFF;
 }
 a:active{
-	background-color: white;
+	background-color: #CFD8DC;
 
 }.middle{
 	padding: 20px;
