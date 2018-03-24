@@ -226,7 +226,7 @@ perspective: 13px;
 
 .last {
     margin: 1em auto;
-    padding: 3em 8em;
+    padding: 3em 5em;
     text-align: center;
     background:white;
     display: table;
@@ -234,7 +234,11 @@ perspective: 13px;
     font-size: 1.5em;
 	box-shadow: -1px 9px 30px -4px gray;
 }
-
+@media only screen and (min-width: 768px){
+	.last{
+		padding:3em 8em;
+	}
+}
 footer {
 	width:100%;
 	padding: 1em;
