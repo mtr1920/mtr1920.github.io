@@ -35,12 +35,9 @@
   padding:15px;
   list-style-type: none;
   align-items:center;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  animation: navigations 1s 0.5s linear forwards;
-  -moz-animation : navigations 1s 0.5s linear forwards;
-  -webkit-animation:navigations 1s 0.5s linear forwards;
+  animation:middle-style 1s 0.5s linear forwards;
+  -moz-animation : middle-style 1s 0.5s linear forwards;
+  -webkit-animation:middle-style 1s 0.5s linear forwards;
   opacity: 0;
 }
 .nav li{
