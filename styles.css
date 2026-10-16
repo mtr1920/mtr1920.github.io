@@ -1,0 +1,203 @@
+:root {
+  --paper: #17181c;
+  --ink: #ecedef;
+  --muted: #9b9ea8;
+  --rule: #2c2e35;
+  --accent: #8f9cff;
+  --surface: #1f2026;
+  color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 400 1.0625rem/1.6 "Schibsted Grotesk", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+main, footer {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+main { padding-top: clamp(4rem, 12vh, 8rem); }
+
+h1, h2, h3 { margin: 0; line-height: 1.2; }
+
+h1 {
+  font-size: 1.0625rem;
+  font-weight: 500;
+  color: var(--muted);
+}
+
+h2 {
+  font-size: 1.0625rem;
+  font-weight: 500;
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+}
+
+h3 { font-size: 1.125rem; font-weight: 700; }
+
+p { margin: 0 0 1rem; }
+
+a {
+  color: inherit;
+  text-decoration-line: underline;
+  text-decoration-color: var(--rule);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.2em;
+  transition: text-decoration-color 0.15s;
+}
+
+a:hover { text-decoration-color: var(--accent); }
+
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+code {
+  font: 0.9em ui-monospace, SFMono-Regular, Menlo, monospace;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: 0.05em 0.3em;
+}
+
+.hero { margin-bottom: 5rem; }
+
+.dictation {
+  margin: 1rem 0 0.75rem;
+  font-size: clamp(2rem, 6.5vw, 3.25rem);
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+
+/* Filler words get struck, then collapse out of the sentence, like OpsTrellis cleaning a transcript. */
+.dictation s {
+  display: inline-block;
+  vertical-align: bottom;
+  white-space: pre;
+  overflow: hidden;
+  max-width: 12em;
+  color: var(--muted);
+  text-decoration: none;
+  background: linear-gradient(var(--accent), var(--accent)) no-repeat 0 58% / 0 0.08em;
+  animation:
+    strike 0.45s ease-out 0.9s forwards,
+    collapse 0.5s cubic-bezier(0.6, 0, 0.3, 1) 1.7s forwards;
+}
+
+.dictation s + s { animation-delay: 1.15s, 1.7s; }
+
+@keyframes strike { to { background-size: 100% 0.08em; } }
+
+@keyframes collapse {
+  to { max-width: 0; opacity: 0; }
+}
+
+.caption {
+  color: var(--muted);
+  font-size: 0.9375rem;
+  margin-bottom: 2rem;
+  opacity: 0;
+  animation: appear 0.4s ease-out 2.4s forwards;
+}
+
+@keyframes appear { to { opacity: 1; } }
+
+.intro { max-width: 34rem; }
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  margin-top: 1.5rem;
+  font-weight: 500;
+}
+
+section {
+  border-top: 1px solid var(--rule);
+  padding: 2.5rem 0 3rem;
+}
+
+.feature { margin-bottom: 2.5rem; }
+
+.feature-head {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.feature-head img { border-radius: 9px; }
+
+.feature-head h3 { font-size: 1.5rem; }
+
+.stack { color: var(--muted); font-size: 0.9375rem; }
+
+figure { margin: 1.5rem 0 0; }
+
+figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+}
+
+.projects, .plain { margin: 0; padding: 0; list-style: none; }
+
+.projects li + li { margin-top: 1.5rem; }
+
+.projects h3 { margin-bottom: 0.35rem; }
+
+.projects p { color: var(--muted); }
+
+.role {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.25rem 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.when { color: var(--muted); margin: 0; font-size: 0.9375rem; }
+
+.plain li {
+  padding-left: 1rem;
+  position: relative;
+  margin-bottom: 0.4rem;
+}
+
+.plain li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.8em;
+  width: 0.35rem;
+  height: 1px;
+  background: var(--muted);
+}
+
+footer {
+  padding-bottom: 3rem;
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dictation s { display: none; }
+  .caption { opacity: 1; animation: none; }
+}
