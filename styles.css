@@ -127,10 +127,8 @@ code {
 
 .links { margin-top: 1rem; }
 
-/* Pads short labels like "X" up to a comfortable tap size without moving the text. */
 .links a, .actions a {
   display: inline-block;
-  min-width: 2.75rem;
   padding: 0.6rem 0;
 }
 
@@ -166,40 +164,24 @@ figure img {
   border-radius: 10px;
 }
 
-.projects, .plain { margin: 0; padding: 0; list-style: none; }
+.projects { margin: 0; padding: 0; list-style: none; }
 
 .projects li + li { margin-top: 1.5rem; }
 
 .projects h3 { margin-bottom: 0.35rem; }
 
-.projects p { color: var(--muted); }
+.projects p { color: var(--muted); margin-bottom: 0.35rem; }
 
-.role {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 0.25rem 1rem;
-  margin-bottom: 0.75rem;
-}
+.projects .stack { font-size: 0.875rem; margin: 0; }
+
+.lead { margin-bottom: 2rem; }
+
+#at-work .when { margin-top: 2.5rem; }
+
 
 .when { color: var(--muted); margin: 0; font-size: 0.9375rem; }
 
-.plain li {
-  padding-left: 1rem;
-  position: relative;
-  margin-bottom: 0.4rem;
-}
 
-.plain li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.8em;
-  width: 0.35rem;
-  height: 1px;
-  background: var(--muted);
-}
 
 footer {
   padding-bottom: 3rem;

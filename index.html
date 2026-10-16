@@ -34,13 +34,13 @@
       <nav class="links" aria-label="Profiles">
         <a href="https://github.com/mtr1920">GitHub</a>
         <a href="https://www.linkedin.com/in/mtr123">LinkedIn</a>
-        <a href="https://x.com/mtr1920">X</a>
+        <a href="https://x.com/mtr1920">X (Twitter)</a>
         <a href="mailto:mrityunjay.k1920@gmail.com">Email</a>
       </nav>
     </header>
 
     <section aria-labelledby="work">
-      <h2 id="work">Work</h2>
+      <h2 id="work">My projects</h2>
 
       <article class="feature">
         <div class="feature-head">
@@ -74,18 +74,39 @@
       </ul>
     </section>
 
-    <section aria-labelledby="experience">
-      <h2 id="experience">Experience</h2>
-      <div class="role">
-        <h3>Consultant, Polestar Solutions</h3>
-        <p class="when">2019 to now</p>
-      </div>
-      <p>Full-stack work on client platforms, from MySQL and Node.js APIs to Angular and React front ends:</p>
-      <ul class="plain">
-        <li>An ad-space booking platform for DLF malls</li>
-        <li>Vega HR, an HR suite with assessments, dashboards and live video</li>
-        <li>A campus hiring platform with online tests, contests and hackathons</li>
+    <section aria-labelledby="at-work">
+      <h2 id="at-work">Built at work</h2>
+      <p class="lead">
+        Since February 2026 I've written about 6,800 commits across ten repositories,
+        as the main author on most of them. These are the systems I built.
+      </p>
+      <ul class="projects">
+        <li>
+          <h3>Live AI interview platform</h3>
+          <p>Voice interviews run by an AI in real time. It bridges LiveKit rooms to Gemini Live and OpenAI Realtime, with proctoring, recording and scored reports.</p>
+          <p class="stack">Next.js, Fastify, Socket.IO, Python. 2,077 commits, from scratch.</p>
+        </li>
+        <li>
+          <h3>Multi-tenant HR backend</h3>
+          <p>A new backend replacing a legacy one: SSO and MFA, job queues with dead-letter handling, AI agents, resume scoring, interview scheduling and an equity module.</p>
+          <p class="stack">NestJS, Drizzle, MySQL, Redis, BullMQ. 2,558 commits, from scratch.</p>
+        </li>
+        <li>
+          <h3>Career roadmap and mock interview app</h3>
+          <p>An agent plans a learning roadmap from a person's goal, then runs mock interviews on it. Every AI call is metered and priced per user.</p>
+          <p class="stack">React, Fastify, Drizzle, BullMQ. 1,027 of its 1,083 commits.</p>
+        </li>
+        <li>
+          <h3>Teams meeting assistant</h3>
+          <p>A bot that joins Microsoft Teams calls, transcribes them live with speaker names, and privately suggests follow-up questions to the person who invited it.</p>
+          <p class="stack">NestJS, Postgres, React, Gemini.</p>
+        </li>
+        <li>
+          <h3>Smaller tools</h3>
+          <p>A fine-tuned resume parser (QLoRA training to a CPU-servable model behind an API), a code-quality analyzer with an HTML report, and face liveness checks in Python.</p>
+        </li>
       </ul>
+      <p class="when">Software engineer since 2019. Before 2026: Node.js and MySQL backends with Angular and React front ends.</p>
     </section>
   </main>
 
