@@ -16,7 +16,7 @@ body {
   margin: 0;
   background: var(--paper);
   color: var(--ink);
-  font: 400 1.0625rem/1.6 "Schibsted Grotesk", system-ui, sans-serif;
+  font: 400 1.0625rem/1.6 "Familjen Grotesk", system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -77,9 +77,10 @@ code {
 .dictation {
   margin: 1rem 0 0.75rem;
   font-size: clamp(2rem, 6.5vw, 3.25rem);
-  font-weight: 700;
+  font-family: Gloock, Georgia, serif;
+  font-weight: 400;
   line-height: 1.12;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.01em;
   text-wrap: balance;
 }
 
@@ -150,7 +151,7 @@ section {
 
 .feature-head img { border-radius: 9px; }
 
-.feature-head h3 { font-size: 1.5rem; }
+.feature-head h3 { font: 400 1.75rem/1.1 Gloock, Georgia, serif; }
 
 .stack { color: var(--muted); font-size: 0.9375rem; }
 
