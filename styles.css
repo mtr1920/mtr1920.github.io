@@ -173,11 +173,13 @@ figure img {
 
 .projects p { color: var(--muted); margin-bottom: 0.35rem; }
 
-.projects .stack { font-size: 0.875rem; margin: 0; }
-
-.lead { margin-bottom: 2rem; }
-
-#at-work .when { margin-top: 2.5rem; }
+.now {
+  max-width: 34rem;
+  padding-left: 0.875rem;
+  border-left: 2px solid var(--accent);
+  color: var(--muted);
+  font-size: 0.9375rem;
+}
 
 
 .when { color: var(--muted); margin: 0; font-size: 0.9375rem; }
