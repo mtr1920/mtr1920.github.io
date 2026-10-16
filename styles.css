@@ -118,13 +118,23 @@ code {
 
 .intro { max-width: 34rem; }
 
-.links {
+.links, .actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem 1.5rem;
-  margin-top: 1.5rem;
+  gap: 0 1.5rem;
   font-weight: 500;
 }
+
+.links { margin-top: 1rem; }
+
+/* Pads short labels like "X" up to a comfortable tap size without moving the text. */
+.links a, .actions a {
+  display: inline-block;
+  min-width: 2.75rem;
+  padding: 0.6rem 0;
+}
+
+.actions { margin: -0.25rem 0 0; }
 
 section {
   border-top: 1px solid var(--rule);
